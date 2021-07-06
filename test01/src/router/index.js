@@ -102,6 +102,26 @@ const routes = [
     path: '/vending',
     name: 'vending',
     component: () => import( /* webpackChunkName: "vending" */ '../views/vending.vue')
+  },
+  {
+    path: '/Watch',
+    name: 'Watch',
+    component: () => import( /* webpackChunkName: "Watch" */ '../views/Watch.vue')
+  },
+  {
+    path: '/Computed',
+    name: 'Computed',
+    component: () => import( /* webpackChunkName: "Computed" */ '../views/Computed.vue')
+  },
+  {
+    path: '/restaurant',
+    name: 'restaurant',
+    component: () => import( /* webpackChunkName: "restaurant" */ '../views/restaurant.vue')
+  },
+  {
+    path: '/restaurant1',
+    name: 'restaurant1',
+    component: () => import( /* webpackChunkName: "restaurant1" */ '../views/restaurant1.vue')
   }
 
 ]
