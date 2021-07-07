@@ -415,6 +415,11 @@ const routes = [
     path: '/kakaologin1',
     name: 'KakaoLogin1',
     component: () => import( /* webpackChunkName: "KakaoLogin1" */ '../views/KakaoLogin1.vue')
+  },
+  {
+    path: '/naverlogin',
+    name: 'NaverLogin',
+    component: () => import( /* webpackChunkName: "NaverLogin" */ '../views/NaverLogin.vue')
   }
 
 ]
