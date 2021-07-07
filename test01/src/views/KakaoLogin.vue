@@ -18,7 +18,7 @@ export default {
     computed: {
         user() {
             return this.$store.state.user;
-        }
+        },
     },
     setup() {},
     created() {},
@@ -44,8 +44,8 @@ export default {
                     success: (res) => {
                         const kakaoAccount = res.kakao_account;
                         console.log(kakaoAccount);
-                        this.$store.commit("user", kakaoAccount)
-                    }
+                        this.$store.commit("user", kakaoAccount);
+                    },
                 });
         },
         kakaoLogout() {
@@ -53,7 +53,7 @@ export default {
                 console.log('Not logged in.');
                 return;
             }
-            window.Kakao.Auth.logout( (res) => {
+            window.Kakao.Auth.logout((res) => {
                     console.log(Kakao.Auth.getAccessToken());
                     console.log(res);
                     this.$store.commit("user", {});

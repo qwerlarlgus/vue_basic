@@ -9,5 +9,5 @@ import store from "./store/store";
 
 createApp(App).use(router).use(store).mixin(ApiMixin).mount("#app");
 
-window.akao.init('c9a21813526ad250f9370a7f9531d05c');
+window.Kakao.init('c9a21813526ad250f9370a7f9531d05c');
 window.Kakao.isInitialized();
