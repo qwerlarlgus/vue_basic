@@ -4,5 +4,10 @@ import {
 import App from "./App.vue";
 import router from "./router";
 import ApiMixin from "./api";
+import store from "./store/store";
 
-createApp(App).use(router).mixin(ApiMixin).mount("#app");w
+
+createApp(App).use(router).use(store).mixin(ApiMixin).mount("#app");
+
+window.akao.init('c9a21813526ad250f9370a7f9531d05c');
+window.Kakao.isInitialized();

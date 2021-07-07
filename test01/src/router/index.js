@@ -322,9 +322,9 @@ const routes = [
     component: () => import( /* webpackChunkName: "EventChange" */ '../views/EventChange.vue')
   },
   {
-    path: '/vending',
-    name: 'vending',
-    component: () => import( /* webpackChunkName: "vending" */ '../views/vending.vue')
+    path: '/Vending',
+    name: 'Vending',
+    component: () => import( /* webpackChunkName: "Vending" */ '../views/Vending.vue')
   },
   {
     path: '/Watch',
@@ -357,9 +357,9 @@ const routes = [
     component: () => import( /* webpackChunkName: "NestedComponent1" */ '../views/NestedComponent1.vue')
   },
   {
-    path: '/ChildComponent',
-    name: 'ChildComponent',
-    component: () => import( /* webpackChunkName: "ChildComponent" */ '../views/ChildComponent.vue')
+    path: '/ChildComponent1',
+    name: 'ChildComponent1',
+    component: () => import( /* webpackChunkName: "ChildComponent1" */ '../views/ChildComponent1.vue')
   },
   {
     path: '/ChildComponent2',
@@ -390,8 +390,33 @@ const routes = [
     path: '/ProvideInject',
     name: 'ProvideInject',
     component: () => import( /* webpackChunkName: "ProvideInject" */ '../views/ProvideInject.vue')
+  },
+  {
+    path: '/StoreAccess',
+    name: 'StoreAccess',
+    component: () => import( /* webpackChunkName: "StoreAccess" */ '../views/StoreAccess.vue')
+  },
+  {
+    path: '/LoginAccess',
+    name: 'LoginAccess',
+    component: () => import( /* webpackChunkName: "LoginAccess" */ '../views/LoginAccess.vue')
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: () => import( /* webpackChunkName: "Login" */ '../views/Login.vue')
+  },
+  {
+    path: '/kakaologin',
+    name: 'KakaoLogin',
+    component: () => import( /* webpackChunkName: "KakaoLogin" */ '../views/KakaoLogin.vue')
+  },
+  {
+    path: '/kakaologin1',
+    name: 'KakaoLogin1',
+    component: () => import( /* webpackChunkName: "KakaoLogin1" */ '../views/KakaoLogin1.vue')
   }
-  
+
 ]
 
 const router = createRouter({
