@@ -146,6 +146,46 @@ const routes = [
     component: Slot
   },
   {
+    path: '/advanced/mixin',
+    name: 'Mixin',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "advanced" */ '../views/5_advanced/Mixin.vue')
+  },
+  {
+    path: '/advanced/plugin',
+    name: 'Plugin',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "advanced" */ '../views/5_advanced/Plugin.vue')
+  },
+  {
+    path: '/advanced/composition',
+    name: 'CompositionAPI',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "advanced" */ '../views/5_advanced/CompositionAPI.vue')
+  },
+  {
+    path: '/advanced/composition2',
+    name: 'CompositionAPI2',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "advanced" */ '../views/5_advanced/CompositionAPI2.vue')
+  },
+  {
+    path: '/advanced/composition3',
+    name: 'CompositionAPI3',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "advanced" */ '../views/5_advanced/CompositionAPI3.vue')
+  },
+  {
+    path: '/advanced/composition4',
+    name: 'CompositionAPI4',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "advanced" */ '../views/5_advanced/CompositionAPI4.vue')
+  },
+  {
+    path: '/advanced/compositionprovide',
+    name: 'CompositionAPIProvide',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "advanced" */ '../views/5_advanced/CompositionAPIProvide.vue')
+  },
+  {
+    path: '/vuex/store',
+    name: 'StoreAccess',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "vuex" */ '../views/6_vuex/StoreAccess.vue')
+  },
+  {
     path: '/materialmodal',
     name: 'MaterialModal',
     component: () => import(/* webpackPrefetch:true, webpackChunkName: "modal" */ '../components/erp/MaterialModal.vue')
