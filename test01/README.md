@@ -1,24 +1,42 @@
-# test01
+# Vue.js 강의 (1 Week)
 
-## Project setup
-```
-npm install
-```
+이 강의는 '[Vue.js 프로젝트 투입 일주일 전](http://www.yes24.com/Product/Goods/101926719)' 저서를 교재로 사용하며, 실무(SAP ERP, 웹, 모바일 서비스) 경력 22년의 강사가 프론트엔드 프레임워크 기술인 Vue.js를 실무에 가장 빠르게 적용할 수 있는 방법을 알려드립니다.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- 강의문의 : seungwon.go@gmail.com
+- 유튜브채널 : [개발자의품격](https://www.youtube.com/c/%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9D%98%ED%92%88%EA%B2%A9)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 강의 목표
 
-### Lints and fixes files
-```
-npm run lint
-```
+1. Vue.js 3.x 버전을 기반으로 Vue프로젝트 생성 및 기본문법, 고급문법을 실무를 바탕으로 모두 배웁니다.
+2. 실무 프로젝트 운영시 고려해야 하는 라우팅 기법을 배웁니다.
+3. Mock 서버를 바탕으로 프론트엔드 개발자가 효율적으로 개발을 진행하는 방법을 배웁니다.
+4. 비즈니스 애플리케이션 개발에 가장 많이 사용되는 UI 패턴인 CRUSD를 바탕으로 실습 예제 구현을 통해 바로 실무에서 적용 가능한 수준으로 성장합니다.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 강의 일정
+
+- [1일차 보기](https://github.com/seungwongo/vue-1week/wiki/%EA%B0%95%EC%9D%98-1%EC%9D%BC%EC%B0%A8)
+- [2일차 보기](https://github.com/seungwongo/vue-1week/wiki/%EA%B0%95%EC%9D%98-2%EC%9D%BC%EC%B0%A8)
+- [3일차 보기](https://github.com/seungwongo/vue-1week/wiki/%EA%B0%95%EC%9D%98-3%EC%9D%BC%EC%B0%A8)
+- [4일차 보기](https://github.com/seungwongo/vue-1week/wiki/%EA%B0%95%EC%9D%98-4%EC%9D%BC%EC%B0%A8)
+- [5일차 보기](https://github.com/seungwongo/vue-1week/wiki/%EA%B0%95%EC%9D%98-5%EC%9D%BC%EC%B0%A8)
+
+## 용어 사전([보기](https://github.com/seungwongo/vue-1week/wiki/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84))
+
+강의에서 나오는 모든 용어는 깃허브 위키 용어 사전에 정리되어 있습니다.
+
+## 접속 사이트 정보
+
+- Github ([https://github.com](https://github.com))
+- 깃허브 강의 코드 다운로드 ([https://github.com/seungwongo/vue-lecture](https://github.com/seungwongo/vue-1week))
+- Vue 공식 사이트 ([https://v3.vuejs.org/](https://v3.vuejs.org/))
+- Vue CLI 공식 사이트 ([https://cli.vuejs.org/](https://cli.vuejs.org/))
+- Vuex 공식 사이트 ([https://vuex.vuejs.org/](https://vuex.vuejs.org/))
+- Visual Studio Code 다운로드 사이트 ([https://code.visualstudio.com/](https://code.visualstudio.com/))
+- Node.js 사이트 ([https://nodejs.org/ko/](https://nodejs.org/ko/))
+- NPM ([https://www.npmjs.com/](https://www.npmjs.com/))
+- Postman 다운로드 사이트 ([https://www.postman.com/downloads/](https://www.postman.com/downloads/))
+- Axios 문서 ([https://github.com/axios/axios](https://github.com/axios/axios))
+- ESLint ([https://eslint.org/docs/rules/](https://eslint.org/docs/rules/))
+- 카카오 개발자 센터 ([https://developers.kakao.com/](https://developers.kakao.com/))
+- W3School ([https://www.w3schools.com/](https://www.w3schools.com/))
+- MDN Web Docs([https://developer.mozilla.org/](https://developer.mozilla.org/))

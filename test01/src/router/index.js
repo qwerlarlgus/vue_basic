@@ -1,223 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-
-// import Home from "../views/Home.vue";
-// import DataBindingHtml from "../views/DataBindingHtml.vue";
-// import DataBindingInputText from "../views/DataBindingInputText.vue";
-// import DataBindingTextarea from "../views/DataBindingTextarea.vue";
-// import DataBindingSelect from "../views/DataBindingSelect.vue";
-// import DataBindingCheckbox from "../views/DataBindingCheckbox.vue";
-// import DataBindingRadio from "../views/DataBindingRadio.vue";
-// import DataBindingAttribute from "../views/DataBindingAttribute.vue";
-// import DataBindingButton from "../views/DataBindingButton.vue";
-// import DataBindingClass from "../views/DataBindingClass.vue";
-// import DataBindingClass2 from "../views/DataBindingClass2.vue";
-// import DataBindingStyle from "../views/DataBindingStyle.vue";
-// import DataBindingList from "../views/DataBindingList.vue";
-// import DataBindingList2 from "../views/DataBindingList2.vue";
-// import DataBindingList3 from "../views/DataBindingList3.vue";
-// import RenderingIf from "../views/RenderingIf.vue";
-// import EventBinding from "../views/EventBinding.vue";
-// import Vending from "../views/Vending.vue";
-// import UserList from "../views/UserList.vue";
-// import Computed from "../views/Computed.vue";
-// import Watch from "../views/Watch.vue";
-// import Restaurant from "../views/Restaurant.vue";
-// import NestedComponent from "../views/NestedComponent.vue";
-// import NestedComponent2 from "../views/NestedComponent2.vue";
-// import NestedComponent3 from "../views/NestedComponent3.vue";
-// import NestedComponent4 from "../views/NestedComponent4.vue";
-// import NestedComponent5 from "../views/NestedComponent5.vue";
-// import Parent from "../views/Parent.vue";
-// import Parent2 from "../views/Parent2.vue";
-// import SlotUseModalLayout from "../views/SlotUseModalLayout.vue";
-// import ProvideInject from "../views/ProvideInject.vue";
-
-// const routes = [{
-//     path: "/",
-//     name: "Home",
-//     component: Home,
-//   },
-//   {
-//     path: "/databindinghtml",
-//     name: "DataBindingHtml",
-//     component: DataBindingHtml,
-//   },
-//   {
-//     path: "/databindinginputtext",
-//     name: "DataBindingInputText",
-//     component: DataBindingInputText,
-//   },
-//   {
-//     path: "/databindingarea",
-//     name: "DataBindingTextarea",
-//     component: DataBindingTextarea,
-//   },
-//   {
-//     path: "/databindingselect",
-//     name: "DataBindingSelect",
-//     component: DataBindingSelect,
-//   },
-//   {
-//     path: "/databindingcheckbox",
-//     name: "DataBindingCheckbox",
-//     component: DataBindingCheckbox,
-//   },
-//   {
-//     path: "/databindingradio",
-//     name: "DataBindingRadio",
-//     component: DataBindingRadio,
-//   },
-//   {
-//     path: "/databindingattribute",
-//     name: "DataBindingAttribute",
-//     component: DataBindingAttribute,
-//   },
-//   {
-//     path: "/databindingbutton",
-//     name: "DataBindingButton",
-//     component: DataBindingButton,
-//   },
-//   {
-//     path: "/databindingclass",
-//     name: "DataBindingClass",
-//     component: DataBindingClass,
-//   },
-//   {
-//     path: "/databindingclass2",
-//     name: "DataBindingClass2",
-//     component: DataBindingClass2,
-//   },
-//   {
-//     path: "/databindingstyle",
-//     name: "DataBindingStyle",
-//     component: DataBindingStyle,
-//   },
-//   {
-//     path: "/databindinglist",
-//     name: "DataBindingList",
-//     component: DataBindingList,
-//   },
-//   {
-//     path: "/databindinglist2",
-//     name: "DataBindingList2",
-//     component: DataBindingList2,
-//   },
-//   {
-//     path: "/databindinglist3",
-//     name: "DataBindingList3",
-//     component: DataBindingList3,
-//   },
-//   {
-//     path: "/renderingif",
-//     name: "RenderingIf",
-//     component: RenderingIf,
-//   },
-//   {
-//     path: "/eventbinding",
-//     name: "EventBinding",
-//     component: EventBinding,
-//   },
-//   {
-//     path: "/vending",
-//     name: "Vending",
-//     component: Vending,
-//   },
-//   {
-//     path: "/userlist",
-//     name: "UserList",
-//     component: UserList,
-//   },
-//   {
-//     path: "/computed",
-//     name: "Computed",
-//     component: Computed,
-//   },
-//   {
-//     path: "/watch",
-//     name: "Watch",
-//     component: Watch,
-//   },
-//   {
-//     path: "/restaurant",
-//     name: "Restaurant",
-//     component: Restaurant,
-//   },
-//   {
-//     path: "/nested",
-//     name: "NestedComponent",
-//     component: NestedComponent,
-//   },
-//   {
-//     path: "/nested2",
-//     name: "NestedComponent2",
-//     component: NestedComponent2,
-//   },
-//   {
-//     path: "/nested3",
-//     name: "NestedComponent3",
-//     component: NestedComponent3,
-//   },
-//   {
-//     path: "/nested4",
-//     name: "NestedComponent4",
-//     component: NestedComponent4,
-//   },
-//   {
-//     path: "/nested5",
-//     name: "NestedComponent5",
-//     component: NestedComponent5,
-//   },
-//   {
-//     path: "/parent",
-//     name: "Parent",
-//     component: Parent,
-//   },
-//   {
-//     path: "/parent2",
-//     name: "Parent2",
-//     component: Parent2,
-//   },
-//   {
-//     path: "/slot",
-//     name: "SlotUseModalLayout",
-//     component: SlotUseModalLayout,
-//   },
-//   {
-//     path: "/provideinject",
-//     name: "ProvideInject",
-//     component: ProvideInject,
-//   },
-//   // {
-//   //   path: "/about",
-//   //   name: "About",
-//   //   component: About,
-//   // },
-//   // {
-//   //   path: "/databinding",
-//   //   name: "DataBinding",
-//   //   component: DataBinding,
-//   // },
-
-//   {
-//     path: "/about",
-//     name: "About",
-//     // route level code-splitting
-//     // this generates a separate chunk (about.[hash].js) for this route
-//     // which is lazy-loaded when the route is visited.
-//     component: () =>
-//       import( /* webpackChunkName: "about" */ "../views/About.vue"),
-//   },
-//   {
-//     path: "/databinding",
-//     name: "DataBinding",
-//     // route level code-splitting
-//     // this generates a separate chunk (about.[hash].js) for this route
-//     // which is lazy-loaded when the route is visited.
-//     component: () =>
-//       import( /* webpackPrefetch:true, webpackChunkName: "databinding" */ "../views/DataBinding.vue"),
-//   }
-// ];
+import ReuseComponent from '../views/4_reuse/ReuseComponent.vue'
+import ReuseComponent2 from '../views/4_reuse/ReuseComponent2.vue'
+import ControlChild from '../views/4_reuse/ControlChild.vue'
+import ControlParent from '../views/4_reuse/ControlParent.vue'
+import Slot from '../views/4_reuse/Slot.vue'
 
 const routes = [
   {
@@ -225,11 +12,6 @@ const routes = [
     name: 'Home',
     component: Home
   },
-  // {
-  //   path: '/DataBindingButton',
-  //   name: 'DataBindingButton',
-  //   component: DataBindingButton
-  // },
   {
     path: '/about',
     name: 'About',
@@ -238,190 +20,136 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-   {
-     path: '/qq',
-     name: 'qq',
-     // route level code-splitting
-     // this generates a separate chunk (about.[hash].js) for this route
-     // which is lazy-loaded when the route is visited.
-     component: () => import( /* webpackChunkName: "qq" */ '../views/qq.vue')
-   },
   {
-    path: '/DataBindingButton',
-    name: 'DataBindingButton',
-    component: () => import( /* webpackChunkName: "DataBindingButton" */ '../views/DataBindingButton.vue')
+    path: '/databinding/string',
+    name: 'DataBindingString',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingString.vue')
   },
   {
-    path: '/DataBindingClass',
+    path: '/databinding/html',
+    name: 'DataBindingHtml',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingHtml.vue')
+  },
+  {
+    path: '/databinding/input',
+    name: 'DataBindingInput',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingInput.vue')
+  },
+  {
+    path: '/databinding/checkbox',
+    name: 'DataBindingCheckbox',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingCheckbox.vue')
+  },
+  {
+    path: '/databinding/radio',
+    name: 'DataBindingRadio',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingRadio.vue')
+  },
+  {
+    path: '/databinding/select',
+    name: 'DataBindingSelect',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingSelect.vue')
+  },
+  {
+    path: '/databinding/textarea',
+    name: 'DataBindingTextarea',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingTextarea.vue')
+  },
+  {
+    path: '/databinding/attribute',
+    name: 'DataBindingAttribute',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingAttribute.vue')
+  },
+  {
+    path: '/databinding/class',
     name: 'DataBindingClass',
-    component: () => import( /* webpackChunkName: "DataBindingClass" */ '../views/DataBindingClass.vue')
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingClass.vue')
   },
   {
-    path: '/DataBindingClass2',
-    name: 'DataBindingClass2',
-    component: () => import( /* webpackChunkName: "DataBindingClass2" */ '../views/DataBindingClass2.vue')
-  },
-  {
-    path: '/DataBindingStyle',
+    path: '/databinding/style',
     name: 'DataBindingStyle',
-    component: () => import( /* webpackChunkName: "DataBindingStyle" */ '../views/DataBindingStyle.vue')
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingStyle.vue')
   },
   {
-    path: '/DataBindingStyle1',
-    name: 'DataBindingStyle1',
-    component: () => import( /* webpackChunkName: "DataBindingStyle1" */ '../views/DataBindingStyle1.vue')
-  },
-  {
-    path: '/DataBindingList',
+    path: '/databinding/list',
     name: 'DataBindingList',
-    component: () => import( /* webpackChunkName: "DataBindingList" */ '../views/DataBindingList.vue')
-  },
-  // {
-  //   path: '/DataBindingList1',
-  //   name: 'DataBindingList1',
-  //   component: () => import( /* webpackChunkName: "DataBindingList1" */ '../views/DataBindingList1.vue')
-  // },
-  // {
-  //   path: '/DataBindingList2',
-  //   name: 'DataBindingList2',
-  //   component: () => import( /* webpackChunkName: "DataBindingList2" */ '../views/DataBindingList2.vue')
-  // },
-  {
-    path: '/DataBindingList3',
-    name: 'DataBindingList3',
-    component: () => import( /* webpackChunkName: "DataBindingList3" */ '../views/DataBindingList3.vue')
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingList.vue')
   },
   {
-    path: '/RenderingVif',
-    name: 'RenderingVif',
-    component: () => import( /* webpackChunkName: "RenderingVif" */ '../views/RenderingVif.vue')
+    path: '/databinding/listserver',
+    name: 'DataBindingListServer',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingListServer.vue')
   },
   {
-    path: '/RenderingVif1',
-    name: 'RenderingVif1',
-    component: () => import( /* webpackChunkName: "RenderingVif1" */ '../views/RenderingVif1.vue')
-  },
-  {
-    path: '/EventClick',
+    path: '/event/click',
     name: 'EventClick',
-    component: () => import( /* webpackChunkName: "EventClick" */ '../views/EventClick.vue')
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/2_event/EventClick.vue')
   },
   {
-    path: '/EventClick1',
-    name: 'EventClick1',
-    component: () => import( /* webpackChunkName: "EventClick1" */ '../views/EventClick1.vue')
-  },
-  {
-    path: '/EventClick2',
-    name: 'EventClick2',
-    component: () => import( /* webpackChunkName: "EventClick2" */ '../views/EventClick2.vue')
-  },
-  {
-    path: '/EventChange',
+    path: '/event/change',
     name: 'EventChange',
-    component: () => import( /* webpackChunkName: "EventChange" */ '../views/EventChange.vue')
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/2_event/EventChange.vue')
   },
   {
-    path: '/Vending',
-    name: 'Vending',
-    component: () => import( /* webpackChunkName: "Vending" */ '../views/Vending.vue')
+    path: '/event/blur',
+    name: 'EventBlur',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/2_event/EventBlur.vue')
   },
   {
-    path: '/Watch',
-    name: 'Watch',
-    component: () => import( /* webpackChunkName: "Watch" */ '../views/Watch.vue')
+    path: '/event/key',
+    name: 'EventKey',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/2_event/EventKey.vue')
   },
   {
-    path: '/Computed',
+    path: '/extra/renderingif',
+    name: 'RenderingIf',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/3_extra/RenderingIf.vue')
+  },
+  {
+    path: '/extra/renderingshow',
+    name: 'RenderingShow',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/3_extra/RenderingShow.vue')
+  },
+  {
+    path: '/extra/computed',
     name: 'Computed',
-    component: () => import( /* webpackChunkName: "Computed" */ '../views/Computed.vue')
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/3_extra/Computed.vue')
   },
   {
-    path: '/restaurant',
-    name: 'restaurant',
-    component: () => import( /* webpackChunkName: "restaurant" */ '../views/restaurant.vue')
+    path: '/extra/watch',
+    name: 'Watch',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "event" */ '../views/3_extra/Watch.vue')
   },
   {
-    path: '/restaurant1',
-    name: 'restaurant1',
-    component: () => import( /* webpackChunkName: "restaurant1" */ '../views/restaurant1.vue')
+    path: '/reuse/reusecomponent',
+    name: 'ReuseComponent',
+    component: ReuseComponent
   },
   {
-    path: '/NestedComponent',
-    name: 'NestedComponent',
-    component: () => import( /* webpackChunkName: "NestedComponent" */ '../views/NestedComponent.vue')
+    path: '/reuse/reusecomponent2',
+    name: 'ReuseComponent2',
+    component: ReuseComponent2
   },
   {
-    path: '/NestedComponent1',
-    name: 'NestedComponent1',
-    component: () => import( /* webpackChunkName: "NestedComponent1" */ '../views/NestedComponent1.vue')
+    path: '/reuse/controlchild',
+    name: 'ControlChild',
+    component: ControlChild
   },
   {
-    path: '/ChildComponent1',
-    name: 'ChildComponent1',
-    component: () => import( /* webpackChunkName: "ChildComponent1" */ '../views/ChildComponent1.vue')
+    path: '/reuse/controlparent',
+    name: 'ControlParent',
+    component: ControlParent
   },
   {
-    path: '/ChildComponent2',
-    name: 'ChildComponent2',
-    component: () => import( /* webpackChunkName: "ChildComponent2" */ '../views/ChildComponent2.vue')
+    path: '/reuse/slot',
+    name: 'Slot',
+    component: Slot
   },
   {
-    path: '/ChildComponent3',
-    name: 'ChildComponent3',
-    component: () => import( /* webpackChunkName: "ChildComponent3" */ '../views/ChildComponent3.vue')
-  },
-  {
-    path: '/ChildComponent4',
-    name: 'ChildComponent4',
-    component: () => import( /* webpackChunkName: "ChildComponent4" */ '../views/ChildComponent4.vue')
-  },
-  {
-    path: '/ChildComponent5',
-    name: 'ChildComponent5',
-    component: () => import( /* webpackChunkName: "ChildComponent5" */ '../views/ChildComponent5.vue')
-  },
-  {
-    path: '/SlotUserModelLayout',
-    name: 'SlotUserModelLayout',
-    component: () => import( /* webpackChunkName: "SlotUserModelLayout" */ '../views/SlotUserModelLayout.vue')
-  },
-  {
-    path: '/ProvideInject',
-    name: 'ProvideInject',
-    component: () => import( /* webpackChunkName: "ProvideInject" */ '../views/ProvideInject.vue')
-  },
-  {
-    path: '/StoreAccess',
-    name: 'StoreAccess',
-    component: () => import( /* webpackChunkName: "StoreAccess" */ '../views/StoreAccess.vue')
-  },
-  {
-    path: '/LoginAccess',
-    name: 'LoginAccess',
-    component: () => import( /* webpackChunkName: "LoginAccess" */ '../views/LoginAccess.vue')
-  },
-  {
-    path: '/Login',
-    name: 'Login',
-    component: () => import( /* webpackChunkName: "Login" */ '../views/Login.vue')
-  },
-  {
-    path: '/kakaologin',
-    name: 'KakaoLogin',
-    component: () => import( /* webpackChunkName: "KakaoLogin" */ '../views/KakaoLogin.vue')
-  },
-  {
-    path: '/kakaologin1',
-    name: 'KakaoLogin1',
-    component: () => import( /* webpackChunkName: "KakaoLogin1" */ '../views/KakaoLogin1.vue')
-  },
-  {
-    path: '/naverlogin',
-    name: 'NaverLogin',
-    component: () => import( /* webpackChunkName: "NaverLogin" */ '../views/NaverLogin.vue')
+    path: '/materialmodal',
+    name: 'MaterialModal',
+    component: () => import(/* webpackPrefetch:true, webpackChunkName: "modal" */ '../components/erp/MaterialModal.vue')
   }
-
 ]
 
 const router = createRouter({
